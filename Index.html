@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forkilia · Intelligent Kitchen Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__brand">
+        <span class="hexlogo">FK</span>
+        <span class="nav__name">Forkilia</span>
+      </div>
+      <nav class="nav__links">
+        <a href="#objetivo">Objetivo</a>
+        <a href="#operaciones">Operaciones</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#tecnologias">Tecnología</a>
+        <a href="#equipo">Equipo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow">UPSIN · Proyecto Integrador I · TIID</p>
+      <h1 class="hero__title">FORKILIA</h1>
+      <p class="hero__tagline">Intelligent Kitchen Management</p>
+      <p class="hero__desc">
+        Facilitar la administración diaria de pequeños negocios de cocina mediante una
+        plataforma digital que centraliza inventario, recetas, pedidos y clientes, y calcula
+        presupuestos automáticos, ayudando al emprendedor a tomar decisiones más informadas
+        sobre costos y precios.
+      </p>
+      <a href="#operaciones" class="btn">Ver operaciones del sistema ↓</a>
+    </div>
+    <div class="hero__board" aria-hidden="true">
+      <div class="board__row">
+        <span class="board__chip">🥕 Ingredientes</span>
+        <span class="board__chip">🧾 Pedidos</span>
+        <span class="board__chip">📖 Recetas</span>
+      </div>
+      <div class="board__row board__row--offset">
+        <span class="board__chip">📦 Inventario</span>
+        <span class="board__chip">👤 Clientes</span>
+        <span class="board__chip">⚖️ Mermas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OBJETIVO ===== -->
+  <section class="section" id="objetivo">
+    <div class="section__inner section__inner--split">
+      <div class="card card--tag">
+        <p class="card__eyebrow">Objetivo del proyecto</p>
+        <p class="card__text">
+          Desarrollar, mediante Java, HTML/CSS/JS y MySQL, un sistema web funcional que
+          permita a emprendedores de cocina gestionar su negocio de forma organizada,
+          replicando fielmente un diseño ya definido en Figma.
+        </p>
+      </div>
+      <div class="card card--mint" id="beneficios">
+        <p class="card__eyebrow">Beneficios esperados</p>
+        <p class="card__text">
+          El emprendedor conoce el costo real de sus recetas, fija precios con margen claro,
+          controla su inventario y da seguimiento a sus pedidos y mermas desde un solo
+          dashboard.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OPERACIONES ===== -->
+  <section class="section section--cream" id="operaciones">
+    <div class="section__inner">
+      <p class="section__eyebrow">Funcionalidades</p>
+      <h2 class="section__title">Operaciones del sistema</h2>
+
+      <div class="grid" id="opGrid">
+        <article class="opcard" data-i="0">
+          <span class="opcard__icon"><i class="fa-solid fa-clipboard-list"></i></span>
+          <h3>Pedidos</h3>
+          <p>Gestión y seguimiento de pedidos por estatus.</p>
+        </article>
+        <article class="opcard" data-i="1">
+          <span class="opcard__icon"><i class="fa-solid fa-book-open"></i></span>
+          <h3>Recetas</h3>
+          <p>Costeo automático y precio de venta.</p>
+        </article>
+        <article class="opcard" data-i="2">
+          <span class="opcard__icon"><i class="fa-solid fa-tag"></i></span>
+          <h3>Categorías</h3>
+          <p>Organización de recetas e ingredientes.</p>
+        </article>
+        <article class="opcard" data-i="3">
+          <span class="opcard__icon"><i class="fa-solid fa-box"></i></span>
+          <h3>Inventario</h3>
+          <p>Control de stock con alertas de mínimos.</p>
+        </article>
+        <article class="opcard" data-i="4">
+          <span class="opcard__icon"><i class="fa-solid fa-user"></i></span>
+          <h3>Clientes</h3>
+          <p>Registro de clientes frecuentes y empresariales.</p>
+        </article>
+        <article class="opcard" data-i="5">
+          <span class="opcard__icon"><i class="fa-solid fa-scale-balanced"></i></span>
+          <h3>Control de Mermas</h3>
+          <p>Registro y clasificación de pérdidas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECNOLOGÍAS ===== -->
+  <section class="section" id="tecnologias">
+    <div class="section__inner">
+      <p class="section__eyebrow">Stack</p>
+      <h2 class="section__title">Tecnologías utilizadas</h2>
+      <div class="techrow">
+        <div class="techchip"><span class="techchip__dot" style="background:#e76f00"></span>Java</div>
+        <div class="techchip"><span class="techchip__dot" style="background:#4479a1"></span>MySQL</div>
+        <div class="techchip"><span class="techchip__dot" style="background:#e34c26"></span>HTML5</div>
+        <div class="techchip"><span class="techchip__dot" style="background:#2965f1"></span>CSS3</div>
+        <div class="techchip"><span class="techchip__dot" style="background:#f0db4f"></span>JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EQUIPO / FOOTER ===== -->
+  <footer class="footer" id="equipo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="hexlogo hexlogo--sm">FK</span>
+        <span>Forkilia</span>
+      </div>
+      <ul class="footer__team">
+        <li>Alicia Arellano</li>
+        <li>Ghilary Colado</li>
+        <li>Melissa Ovalle</li>
+        <li>Genesis Ulloa</li>
+      </ul>
+      <div class="footer__contact">
+        <p class="footer__contact-title">Contáctanos</p>
+        <div class="footer__social">
+          <a href="mailto:contacto@forkilia.com" aria-label="Correo"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://wa.me/5210000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com/forkilia" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="footer__meta">UPSIN · Proyecto Integrador I</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
